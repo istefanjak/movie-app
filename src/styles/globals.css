@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-1: #fff;
+  --text-2: #999c9f;
+  --text-2-opacity: #999c9f19;
+  --text-3: #78a6b8;
+  --bg-1: #060d17;
+  --bg-2: #1c252f;
+  --bg-3: #383d47;
+  --bg-4: #fbc500;
+  --bg-5: #ddad00;
+  --bg-6: #10161d;
+}
+
+body {
+  color: var(--text-1);
+  background-color: black;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: var(--text-2);
+}
+
+button {
+  color: var(--text-1);
+  background: var(--bg-2);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: var(--bg-3);
+}
+
+.button-1 {
+  font-weight: 500;
+  color: black;
+  background: var(--bg-4);
+}
+
+.button-1:hover {
+  background: var(--bg-5);
+}
+
+.button-2 {
+  font-weight: 500;
+  color: var(--text-2);
+  background: transparent;
+  border: 1px solid var(--text-2);
+}
+
+.button-2:hover {
+  color: var(--text-2);
+  background: text;
+}
+
+.link-1 {
+  color: var(--text-2);
+  padding: 0.5rem 1rem;
+}
+
+.link-1:hover {
+  color: var(--text-1);
+}
+
+/* Font color */
+.font-primary {
+  color: var(--text-1);
+}
+
+.font-secondary {
+  color: var(--text-2);
+}
+
+.font-tertiary {
+  color: var(--text-3);
+}
+
+/* Background color */
+.bg-1 {
+  background-color: var(--bg-1);
+}
+
+.bg-2 {
+  background-color: var(--bg-2);
+}
+
+.bg-3 {
+  background-color: var(--bg-3);
+}
+
+.bg-4 {
+  background-color: var(--bg-4);
+}
+
+.bg-5 {
+  background-color: var(--bg-5);
+}
+
+.bg-6 {
+  background-color: var(--bg-6);
+}
+
+/* Hero */
+.hero {
+  min-height: 600px;
+}
+
+.hero .gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 50%, black 60%);
+}
+
+/* Carousel */
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev,
+.slick-prev:hover,
+.slick-next,
+.slick-next:hover {
+  width: 3rem;
+  z-index: 1;
+  border-radius: 0;
+  background: rgba(6, 13, 23, 0.8);
+  height: 100%;
+  opacity: 0;
+}
+
+.slick-slider:hover .slick-prev,
+.slick-slider:hover .slick-next {
+  opacity: 100%;
+}
+
+.slick-disabled {
+  display: none !important;
+}
+
+.slick-track {
+  display: flex;
+  gap: 2rem;
+}
+
+.slick-dots {
+  bottom: 0;
+}
+
+.slick-dots li button:before {
+  font-size: 0.66rem;
+  color: var(--bg-3);
+  opacity: 90%;
+}
+
+.slick-dots li {
+  margin: 0;
+}
+
+.slick-dots li.slick-active button:before {
+  color: orange;
+}
+
+.about-card {
+  width: 384px;
+  background: linear-gradient(180deg, #11181f, rgba(17, 24, 31, 0));
+}
+
+/* Favorites */
+.heart {
+  transition: width 0.1s ease-in-out, height 0.1s ease-in-out;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--bg-4);
+  border-radius: 4px;
+}
